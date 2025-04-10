@@ -1,0 +1,170 @@
+body{
+
+    margin: 0 auto;
+    text-align: center;
+    background-image:url(slike/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    min-width: 800px;
+}
+
+h2 {
+
+  font-family:sans-serif;
+
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgb(167, 167, 167);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    animation: fade-out 2s ease-in-out 0s 1 normal forwards;
+    pointer-events: none;
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes change-z-index {
+    0% {
+        z-index: 1;
+    }
+    100% {
+        z-index: -1;
+    }
+}
+
+.container{
+  background-color: rgb(0, 0, 0, 0.5);
+  padding: 5% 5%;
+    margin: 2% auto;
+    text-align: center;
+    max-width: 1000px;
+}
+
+table {
+
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+a,
+a:hover,
+a:visited,
+a:active {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+input{
+
+  background-color: white;
+  border: none;
+
+}
+
+th {
+    padding: 20px;
+    text-align: center;
+    word-spacing: 5px;
+    margin: 0 10px 0 10px;
+    font-size: 16px;
+  }
+
+  form {
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+
+  }
+
+  label {
+    margin-left: 10%;
+
+  }
+
+.div1{
+
+  margin: 0 auto;
+
+}
+
+  .div2 {
+    padding: 2% 0;
+  text-align: center;
+  justify-content: center;
+  justify-content: space-between;
+    display: flex;
+ column-count: 2;
+
+  }
+
+  input[type=text]{
+    width: 60%;
+    height: 30px;
+    margin-right: 10%;
+    background: none;
+    border-bottom: 2px solid white;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    outline: none;
+    font-size: 20px;
+  }
+
+  input[type=file]::file-selector-button{
+
+    font-weight: bold;
+  color: dodgerblue;
+  border: thin solid grey;
+  border-radius: 3px;
+  padding:3%;
+
+  }
+
+  input[type=file]{
+
+    background: none;
+    margin: 0 auto;
+
+  }
+
+  input::placeholder {
+    text-align: center;
+    color: rgb(255, 255, 255, 0.8);
+    font-weight: normal;
+    border: none;
+    font-size: small;
+}
+
+
+input[type=submit]{
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
+    margin: 0 auto;
+    width: 15%;
+    height: 30px;
+    background: none;
+    border: 2px solid white ;
+  }
